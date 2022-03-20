@@ -1,5 +1,5 @@
 # DeFI Staker
-## 1 Clone this project 
+### 1 Clone this project 
 
 git clone - https://github.com/ungalexyg/defi-staker.git
 
