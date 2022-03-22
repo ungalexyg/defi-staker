@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 /**
  * migration contract
  */
-contract Migration {
+contract Migrations {
     /**
      * define props
      */
@@ -29,7 +29,7 @@ contract Migration {
     /**
      * set the migration as completed
      */
-    function set_completed(uint256 completed) public restricted {
+    function setCompleted(uint256 completed) public restricted {
         last_completed_migration = completed;
     }
 
@@ -37,7 +37,7 @@ contract Migration {
      * upgrade migration
      */
     function upgrade(address new_address) public restricted {
-        Migrations upgraded = Migrations(new_address);
-        upgraded.set_completed(last_completed_migration);
+        Migrations upgraded = Migrations(new_address); // define upgraded var from type Migrations
+        upgraded.setCompleted(last_completed_migration);
     }
 }
