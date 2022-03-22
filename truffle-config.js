@@ -1,5 +1,5 @@
-require('babel-register');
-require('babel-pollyfill');
+// require('babel-register');
+// require('babel-pollyfill');
 
 
 module.exports = {
