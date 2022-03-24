@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 /**
  * RewardToken contract
+ * ERC-20 implementation
  */
 contract RewardToken {
     /**

@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 /**
  * TetherMock contract
+ * ERC-20 implementation
  */
 contract TetherMock {
     /**
