@@ -57,7 +57,7 @@ contract AnyCoin {
      */
     function transferFrom(
         address _from,
-        address payable _to,
+        address _to,
         uint256 _value
     ) public returns (bool success) {
         // get - check from balance

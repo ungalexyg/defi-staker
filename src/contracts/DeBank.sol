@@ -12,7 +12,7 @@ contract DeBank {
     address public owner;
     TetherMock public tether;
     RewardToken public rwrd;
-    address[] payable stakers;
+    address payable[] stakers;
     mapping(address => uint256) public stakingBalance;
     mapping(address => bool) public hasStaked;
     mapping(address => bool) public isStaked;
@@ -38,54 +38,51 @@ contract DeBank {
         stakingBalance[msg.sender] += _amount;
 
         // empty maapping return false
-        if(!hasStaked) {
+        if (!hasStaked[msg.sender]) {
             stakers.push(msg.sender);
         }
 
         // update staking flags
-        isStaking[msg.sender] = true;
-        hasStaking[msg.sender] = true;
+        isStaked[msg.sender] = true;
+        hasStaked[msg.sender] = true;
     }
-
 
     /**
      * issue staking rewards
      */
-     function issueTokens() public {
-         require(msg.sender == owner, "Caller must be the owner");
+    function issueTokens() public {
+        require(msg.sender == owner, "Caller must be the owner");
 
-         for(uint i=0; i<stakers.length; i++) {
-             // get staker address
-             address recipient = stakers[i]; 
+        for (uint256 i = 0; i < stakers.length; i++) {
+            // get staker address
+            address payable recipient = stakers[i];
 
-             // get staker balance
-             uint balance = stakingBalance[recipient];
+            // get staker balance
+            uint256 balance = stakingBalance[recipient];
 
             // if the balcne grather the 0
-             if(balance > 0) {
-                 // issue to staker's equal amount of their balance 
-                 // e.g for every staked coin they get one
-                 // it can be something like 
+            if (balance > 0) {
+                // issue to staker's equal amount of their balance
+                // e.g for every staked coin they get one
+                // it can be something like
                 //  balance = balance * 0.1 to give 10% etc
-                 rwrd.transfer(recipient, balance); 
-             }
-         }
-     }
-
+                rwrd.transfer(recipient, balance);
+            }
+        }
+    }
 
     /**
      * unstake tokens
      */
-     function unstakeTokens() public {
-         // get sender's staking balance
-         uint balance = stakingBalance[msg.sender];
+    function unstakeTokens() public {
+        // get sender's staking balance
+        uint256 balance = stakingBalance[msg.sender];
 
-         // gate - min staking balance 
-         require(balance > 0, "Staking balance must be more than zero");
+        // gate - min staking balance
+        require(balance > 0, "Staking balance must be more than zero");
 
-         // transdsfer the balance back to the sender
-         // in this case we use the transfer() instead of tranferFrom
+        // transdsfer the balance back to the sender
+        // in this case we use the transfer() instead of tranferFrom
         tether.transfer(msg.sender, balance);
-     }     
-
+    }
 }
