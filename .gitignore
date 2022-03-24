@@ -60,3 +60,4 @@ Thumbs.db
 # artifacts
 artifacts
 contracts/artifacts
+src/truffle_apis
