@@ -47,6 +47,31 @@ contract DeBank {
         hasStaking[msg.sender] = true;
     }
 
-    
 
+    /**
+     * issue staking rewards
+     */
+     function issueTokens() public {
+         require(msg.sender == owner, "Caller must be the owner");
+
+         for(uint i=0; i<stakers.length; i++) {
+             // get staker address
+             address recipient = stakers[i]; 
+
+             // get staker balance
+             uint balance = stakingBalance[recipient];
+
+            // if the balcne grather the 0
+             if(balance > 0) {
+                 // issue to staker's equal amount of their balance 
+                 // e.g for every staked coin they get one
+                 // it can be something like 
+                //  balance = balance * 0.1 to give 10% etc
+                 rwrd.transfer(recipient, balance); 
+             }
+         }
+     }
+
+
+ 
 }
