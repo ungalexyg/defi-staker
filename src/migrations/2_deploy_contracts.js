@@ -1,6 +1,6 @@
 const TetherMock = artifacts.require('TetherMock');
 const RewardToken = artifacts.require('RewardToken');
-// const AnyCoin = artifacts.require('AnyCoin');
+const AnyCoin = artifacts.require('AnyCoin');
 const DeBank = artifacts.require('DeBank');
 
 // functions get deployer, network & accounts
@@ -9,38 +9,29 @@ const DeBank = artifacts.require('DeBank');
 // > accouts = web3.eth.getAccounts() 
 module.exports = async function (deployer, network, accounts) {
 
-    // console.log("--- deploy start ----");
-    // console.log("accounts:");
-    // console.log(accounts);
-
     // deploy the stable coin
     await deployer.deploy(TetherMock);
-    const stablecoin = TetherMock.deployed();
+    const tether = TetherMock.deployed();
 
     // deploy the reward coin
     await deployer.deploy(RewardToken);
     const rwrd = RewardToken.deployed();
 
     // deploy the AnyCoin
-    // await deployer.deploy(AnyCoin);
-    // const anycoin = AnyCoin.deployed();
-
+    await deployer.deploy(AnyCoin);
+    const anycoin = AnyCoin.deployed();
 
     // deploy the bank 
-    await deployer.deploy(DeBank, rwrd.address, stablecoin.address);
+    await deployer.deploy(DeBank, rwrd.address, tether.address);
     const deBank = DeBank.deployed();
 
     // transfer rewards supply to the bank
     await rwrd.transfer(deBank.address, '1000000000000000000000000'); // 1 million tokens
 
     // transfer to investors RWRD (RewardToken) 
-    // let results = [0];
-    // results[1] = await stablecoin.transfer(accounts[1], '100000000000000000000'); // 100 tokens
-    // results[2] = await stablecoin.transfer(accounts[2], '100000000000000000000'); // 100 tokens
+    await tether.transfer(accounts[1], '100000000000000000000'); // 100 tokens
+    await tether.transfer(accounts[2], '100000000000000000000'); // 100 tokens
 
     // transfer anycoin
-    // results[3] = await anycoin.transfer(accounts[2], '100000000000000000000'); // 100 tokens
-
-    // console.log(results);
-    // console.log("--- deploy end ----");
+    await anycoin.transfer(accounts[3], '100000000000000000000'); // 100 tokens
 }
