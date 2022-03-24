@@ -9,7 +9,8 @@ contract RewardToken {
      */
     string public name = "RewardToken";
     string public symbol = "RWRD";
-    uint256 public totalSupply = 1000000000000000000; // 18 dec, 1 million tokens
+    // Wei, 1 token = 18 dec, 1 million tokens = 24 dec
+    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8 public decimals = 18;
     mapping(address => uint256) public balanceOf; // balnces storage
     mapping(address => mapping(address => uint256)) public allowance;

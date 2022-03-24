@@ -9,7 +9,8 @@ contract TetherMock {
      */
     string public name = "TetherMock";
     string public symbol = "mUSDT";
-    uint256 public totalSupply = 1000000000000000000; // 18 dec, 1 million tokens
+    // Wei, 1 token = 18 dec, 1 million tokens = 24 dec
+    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8 public decimals = 18;
     mapping(address => uint256) public balanceOf; // balnces storage
     mapping(address => mapping(address => uint256)) public allowance;
@@ -23,6 +24,7 @@ contract TetherMock {
 
     /**
      * prep events
+     * limitation up to 3 indexed per event
      */
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
