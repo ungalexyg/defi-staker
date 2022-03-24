@@ -73,5 +73,19 @@ contract DeBank {
      }
 
 
- 
+    /**
+     * unstake tokens
+     */
+     function unstakeTokens() public {
+         // get sender's staking balance
+         uint balance = stakingBalance[msg.sender];
+
+         // gate - min staking balance 
+         require(balance > 0, "Staking balance must be more than zero");
+
+         // transdsfer the balance back to the sender
+         // in this case we use the transfer() instead of tranferFrom
+        tether.transfer(msg.sender, balance);
+     }     
+
 }
