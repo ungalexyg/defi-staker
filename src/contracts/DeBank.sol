@@ -8,7 +8,7 @@ import "./TetherMock.sol";
  * DeBank contract
  */
 contract DeBank {
-    string public name = "DeBank";
+    string public name = "DeBank1...";
     address public owner;
 
     TetherMock public stablecoin;

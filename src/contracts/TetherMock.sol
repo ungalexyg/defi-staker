@@ -7,7 +7,7 @@ contract TetherMock {
     /**
      * define props
      */
-    string public name = "TetherMock";
+    string public name = "TetherMock1...";
     string public symbol = "mUSDT";
     // Wei, 1 token = 18 dec, 1 million tokens = 24 dec
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
@@ -59,7 +59,7 @@ contract TetherMock {
      */
     function transferFrom(
         address _from,
-        address _to,
+        address payable _to,
         uint256 _value
     ) public returns (bool success) {
         // gate - check from balance

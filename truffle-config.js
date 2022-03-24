@@ -6,7 +6,8 @@ module.exports = {
     networks: {
         development: {
             host: '127.0.0.1',
-            port: '7545',
+            port: '7545', //ganahce's default port
+            // port: '9545', //truffle's default port
             network_id: '*' // connect to any network
         }
     },
