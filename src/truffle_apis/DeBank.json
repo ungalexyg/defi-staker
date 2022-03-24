@@ -79,25 +79,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract RewardToken\",\"name\":\"_rwrd\",\"type\":\"address\"},{\"internalType\":\"contract TetherMock\",\"name\":\"_tether\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"rwrd\",\"outputs\":[{\"internalType\":\"contract RewardToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"stablecoin\",\"outputs\":[{\"internalType\":\"contract TetherMock\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"DeBank contract\"}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/DeBank.sol\":\"DeBank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/DeBank.sol\":{\"keccak256\":\"0x860e4fc5f29eb0f6ba361d837071cd0076d8625770aa65c124753e22605e0ee0\",\"urls\":[\"bzz-raw://10553f5fbaa9265e07974fe9819283716df517ada9d2fb9133a620dcb9e5963d\",\"dweb:/ipfs/Qme58a6TCqCMennerAcHxL5qCk5GNYBELgW8yn4U8QMRPC\"]},\"project:/src/contracts/RewardToken.sol\":{\"keccak256\":\"0x8f9476b8595fc5f8ad9df26f4c70f1b257b7c31f5d98a6e0928934967c2151c4\",\"urls\":[\"bzz-raw://376c1135f6ba53ad6177ab4976aebc4913ab0bf23ddf3db95c96fc05cee35b06\",\"dweb:/ipfs/QmNX75gHrZfa9Bz8KALMgqarM216kSmrSUpXBJNaSUB537\"]},\"project:/src/contracts/TetherMock.sol\":{\"keccak256\":\"0x1781516b2c3b48c26a1e2dba23cb4c9d88ec621f0185731128779b47d6ba628a\",\"urls\":[\"bzz-raw://b9cc593ec5d878cea5ca4c9301584018573aa4df3f2722e426e210099c05558a\",\"dweb:/ipfs/QmSquLWVRd4ABpfceuuYw2tSCnBETTPj8ba6JbRXZrjDMr\"]}},\"version\":1}",
-  "bytecode": "0x60806040526040518060400160405280600681526020017f446542616e6b00000000000000000000000000000000000000000000000000008152506000908051906020019061004f929190610123565b5034801561005c57600080fd5b506040516104ce3803806104ce8339818101604052604081101561007f57600080fd5b81019080805190602001909291908051906020019092919050505081600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050506101c8565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061016457805160ff1916838001178555610192565b82800160010185558215610192579182015b82811115610191578251825591602001919060010190610176565b5b50905061019f91906101a3565b5090565b6101c591905b808211156101c15760008160009055506001016101a9565b5090565b90565b6102f7806101d76000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde0314610051578063815e77e2146100d45780638da5cb5b1461011e578063e9cbd82214610168575b600080fd5b6100596101b2565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610250565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610126610276565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61017061029c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102485780601f1061021d57610100808354040283529160200191610248565b820191906000526020600020905b81548152906001019060200180831161022b57829003601f168201915b505050505081565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a7231582070da01fdb49c75d24c33aea376b615aa03fde465da5303dad2048b4e86c733d964736f6c63430005110032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde0314610051578063815e77e2146100d45780638da5cb5b1461011e578063e9cbd82214610168575b600080fd5b6100596101b2565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610250565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610126610276565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61017061029c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102485780601f1061021d57610100808354040283529160200191610248565b820191906000526020600020905b81548152906001019060200180831161022b57829003601f168201915b505050505081565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a7231582070da01fdb49c75d24c33aea376b615aa03fde465da5303dad2048b4e86c733d964736f6c63430005110032",
-  "sourceMap": "162:267:0:-;;;184:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;310:117;8:9:-1;5:2;;;30:1;27;20:12;5:2;310:117:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;310:117:0;;;;;;;;;;;;;;;;;;;;;;;;;385:5;378:4;;:12;;;;;;;;;;;;;;;;;;413:7;400:10;;:20;;;;;;;;;;;;;;;;;;310:117;;162:267;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "162:267:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;162:267:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:29;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;184:29:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;280:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;219:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;246:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;184:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;280:23::-;;;;;;;;;;;;;:::o;219:20::-;;;;;;;;;;;;;:::o;246:28::-;;;;;;;;;;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract RewardToken\",\"name\":\"_rwrd\",\"type\":\"address\"},{\"internalType\":\"contract TetherMock\",\"name\":\"_tether\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"rwrd\",\"outputs\":[{\"internalType\":\"contract RewardToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"stablecoin\",\"outputs\":[{\"internalType\":\"contract TetherMock\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"DeBank contract\"}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/DeBank.sol\":\"DeBank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/DeBank.sol\":{\"keccak256\":\"0x860e4fc5f29eb0f6ba361d837071cd0076d8625770aa65c124753e22605e0ee0\",\"urls\":[\"bzz-raw://10553f5fbaa9265e07974fe9819283716df517ada9d2fb9133a620dcb9e5963d\",\"dweb:/ipfs/Qme58a6TCqCMennerAcHxL5qCk5GNYBELgW8yn4U8QMRPC\"]},\"project:/src/contracts/RewardToken.sol\":{\"keccak256\":\"0x3a2012c52b151657ae8473d9277c2d13e98a044813d0548660cd5c97e7087656\",\"urls\":[\"bzz-raw://61975584eb8bb2c59e7f6aa5fe9994898fa5ad75b585765dc70a2d2a5468ef5d\",\"dweb:/ipfs/Qme7nyq4AAuGS3dtiZcCh75ZDqKcVamrusS97B6gNB9jcf\"]},\"project:/src/contracts/TetherMock.sol\":{\"keccak256\":\"0xe04c27726fe781ae4b543991dea04b08e326474e3bf01c063e47f8e90ae4b43f\",\"urls\":[\"bzz-raw://7d8123035362e887c050b1bed539344d54863bf6a946ac0a03c2cbc331508b5e\",\"dweb:/ipfs/QmReKB7CDPgF4g6uC68vojN8p73v6Mxrbn828XeQKJLjey\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600681526020017f446542616e6b00000000000000000000000000000000000000000000000000008152506000908051906020019061004f929190610123565b5034801561005c57600080fd5b506040516104ce3803806104ce8339818101604052604081101561007f57600080fd5b81019080805190602001909291908051906020019092919050505081600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050506101c8565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061016457805160ff1916838001178555610192565b82800160010185558215610192579182015b82811115610191578251825591602001919060010190610176565b5b50905061019f91906101a3565b5090565b6101c591905b808211156101c15760008160009055506001016101a9565b5090565b90565b6102f7806101d76000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde0314610051578063815e77e2146100d45780638da5cb5b1461011e578063e9cbd82214610168575b600080fd5b6100596101b2565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610250565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610126610276565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61017061029c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102485780601f1061021d57610100808354040283529160200191610248565b820191906000526020600020905b81548152906001019060200180831161022b57829003601f168201915b505050505081565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158209b938ce832476e9b57c3efd4fb53cd4224f545d84d44cbb4def966155e00778e64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806306fdde0314610051578063815e77e2146100d45780638da5cb5b1461011e578063e9cbd82214610168575b600080fd5b6100596101b2565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009957808201518184015260208101905061007e565b50505050905090810190601f1680156100c65780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100dc610250565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610126610276565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61017061029c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102485780601f1061021d57610100808354040283529160200191610248565b820191906000526020600020905b81548152906001019060200180831161022b57829003601f168201915b505050505081565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158209b938ce832476e9b57c3efd4fb53cd4224f545d84d44cbb4def966155e00778e64736f6c63430005110032",
+  "sourceMap": "162:267:1:-;;;184:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;310:117;8:9:-1;5:2;;;30:1;27;20:12;5:2;310:117:1;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;310:117:1;;;;;;;;;;;;;;;;;;;;;;;;;385:5;378:4;;:12;;;;;;;;;;;;;;;;;;413:7;400:10;;:20;;;;;;;;;;;;;;;;;;310:117;;162:267;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "162:267:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;162:267:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:29;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;184:29:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;280:23;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;219:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;246:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;184:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;280:23::-;;;;;;;;;;;;;:::o;219:20::-;;;;;;;;;;;;;:::o;246:28::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n\n// imports can be used as in js, the .sol is required\nimport \"./RewardToken.sol\";\nimport \"./TetherMock.sol\";\n\n/**\n * DeBank contract\n */\ncontract DeBank {\n    string public name = \"DeBank\";\n    address public owner;\n\n    TetherMock public stablecoin;\n    RewardToken public rwrd;\n\n    constructor(RewardToken _rwrd, TetherMock _tether) public {\n        rwrd = _rwrd;\n        stablecoin = _tether;\n    }\n}\n",
   "sourcePath": "/Users/ungalexy/code/valet/play-solidity/defi-staker/src/contracts/DeBank.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/DeBank.sol",
     "exportedSymbols": {
       "DeBank": [
-        29
+        192
       ]
     },
-    "id": 30,
+    "id": 193,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1,
+        "id": 164,
         "literals": [
           "solidity",
           "^",
@@ -105,27 +105,27 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "absolutePath": "project:/src/contracts/RewardToken.sol",
         "file": "./RewardToken.sol",
-        "id": 2,
+        "id": 165,
         "nodeType": "ImportDirective",
-        "scope": 30,
-        "sourceUnit": 202,
-        "src": "79:27:0",
+        "scope": 193,
+        "sourceUnit": 398,
+        "src": "79:27:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "project:/src/contracts/TetherMock.sol",
         "file": "./TetherMock.sol",
-        "id": 3,
+        "id": 166,
         "nodeType": "ImportDirective",
-        "scope": 30,
-        "sourceUnit": 374,
-        "src": "107:26:0",
+        "scope": 193,
+        "sourceUnit": 570,
+        "src": "107:26:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -135,20 +135,20 @@
         "contractKind": "contract",
         "documentation": "DeBank contract",
         "fullyImplemented": true,
-        "id": 29,
+        "id": 192,
         "linearizedBaseContracts": [
-          29
+          192
         ],
         "name": "DeBank",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 6,
+            "id": 169,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 29,
-            "src": "184:29:0",
+            "scope": 192,
+            "src": "184:29:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -156,10 +156,10 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 4,
+              "id": 167,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "184:6:0",
+              "src": "184:6:1",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -168,14 +168,14 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "446542616e6b",
-              "id": 5,
+              "id": 168,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "205:8:0",
+              "src": "205:8:1",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_5ba748c94a042bf31d72089d21cb83367dc6f974a6915ff073a0ca4cdc262cdd",
@@ -187,11 +187,11 @@
           },
           {
             "constant": false,
-            "id": 8,
+            "id": 171,
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 29,
-            "src": "219:20:0",
+            "scope": 192,
+            "src": "219:20:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -199,10 +199,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 7,
+              "id": 170,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "219:7:0",
+              "src": "219:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -214,26 +214,26 @@
           },
           {
             "constant": false,
-            "id": 10,
+            "id": 173,
             "name": "stablecoin",
             "nodeType": "VariableDeclaration",
-            "scope": 29,
-            "src": "246:28:0",
+            "scope": 192,
+            "src": "246:28:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TetherMock_$373",
+              "typeIdentifier": "t_contract$_TetherMock_$569",
               "typeString": "contract TetherMock"
             },
             "typeName": {
               "contractScope": null,
-              "id": 9,
+              "id": 172,
               "name": "TetherMock",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 373,
-              "src": "246:10:0",
+              "referencedDeclaration": 569,
+              "src": "246:10:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TetherMock_$373",
+                "typeIdentifier": "t_contract$_TetherMock_$569",
                 "typeString": "contract TetherMock"
               }
             },
@@ -242,26 +242,26 @@
           },
           {
             "constant": false,
-            "id": 12,
+            "id": 175,
             "name": "rwrd",
             "nodeType": "VariableDeclaration",
-            "scope": 29,
-            "src": "280:23:0",
+            "scope": 192,
+            "src": "280:23:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RewardToken_$201",
+              "typeIdentifier": "t_contract$_RewardToken_$397",
               "typeString": "contract RewardToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 11,
+              "id": 174,
               "name": "RewardToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 201,
-              "src": "280:11:0",
+              "referencedDeclaration": 397,
+              "src": "280:11:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RewardToken_$201",
+                "typeIdentifier": "t_contract$_RewardToken_$397",
                 "typeString": "contract RewardToken"
               }
             },
@@ -270,28 +270,28 @@
           },
           {
             "body": {
-              "id": 27,
+              "id": 190,
               "nodeType": "Block",
-              "src": "368:59:0",
+              "src": "368:59:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 21,
+                    "id": 184,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 19,
+                      "id": 182,
                       "name": "rwrd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 12,
-                      "src": "378:4:0",
+                      "referencedDeclaration": 175,
+                      "src": "378:4:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RewardToken_$201",
+                        "typeIdentifier": "t_contract$_RewardToken_$397",
                         "typeString": "contract RewardToken"
                       }
                     },
@@ -299,45 +299,45 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 20,
+                      "id": 183,
                       "name": "_rwrd",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 14,
-                      "src": "385:5:0",
+                      "referencedDeclaration": 177,
+                      "src": "385:5:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RewardToken_$201",
+                        "typeIdentifier": "t_contract$_RewardToken_$397",
                         "typeString": "contract RewardToken"
                       }
                     },
-                    "src": "378:12:0",
+                    "src": "378:12:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RewardToken_$201",
+                      "typeIdentifier": "t_contract$_RewardToken_$397",
                       "typeString": "contract RewardToken"
                     }
                   },
-                  "id": 22,
+                  "id": 185,
                   "nodeType": "ExpressionStatement",
-                  "src": "378:12:0"
+                  "src": "378:12:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 25,
+                    "id": 188,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 23,
+                      "id": 186,
                       "name": "stablecoin",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10,
-                      "src": "400:10:0",
+                      "referencedDeclaration": 173,
+                      "src": "400:10:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TetherMock_$373",
+                        "typeIdentifier": "t_contract$_TetherMock_$569",
                         "typeString": "contract TetherMock"
                       }
                     },
@@ -345,62 +345,62 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 24,
+                      "id": 187,
                       "name": "_tether",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 16,
-                      "src": "413:7:0",
+                      "referencedDeclaration": 179,
+                      "src": "413:7:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TetherMock_$373",
+                        "typeIdentifier": "t_contract$_TetherMock_$569",
                         "typeString": "contract TetherMock"
                       }
                     },
-                    "src": "400:20:0",
+                    "src": "400:20:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TetherMock_$373",
+                      "typeIdentifier": "t_contract$_TetherMock_$569",
                       "typeString": "contract TetherMock"
                     }
                   },
-                  "id": 26,
+                  "id": 189,
                   "nodeType": "ExpressionStatement",
-                  "src": "400:20:0"
+                  "src": "400:20:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 28,
+            "id": 191,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 17,
+              "id": 180,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 14,
+                  "id": 177,
                   "name": "_rwrd",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28,
-                  "src": "322:17:0",
+                  "scope": 191,
+                  "src": "322:17:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_RewardToken_$201",
+                    "typeIdentifier": "t_contract$_RewardToken_$397",
                     "typeString": "contract RewardToken"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 13,
+                    "id": 176,
                     "name": "RewardToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 201,
-                    "src": "322:11:0",
+                    "referencedDeclaration": 397,
+                    "src": "322:11:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RewardToken_$201",
+                      "typeIdentifier": "t_contract$_RewardToken_$397",
                       "typeString": "contract RewardToken"
                     }
                   },
@@ -409,26 +409,26 @@
                 },
                 {
                   "constant": false,
-                  "id": 16,
+                  "id": 179,
                   "name": "_tether",
                   "nodeType": "VariableDeclaration",
-                  "scope": 28,
-                  "src": "341:18:0",
+                  "scope": 191,
+                  "src": "341:18:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_TetherMock_$373",
+                    "typeIdentifier": "t_contract$_TetherMock_$569",
                     "typeString": "contract TetherMock"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 15,
+                    "id": 178,
                     "name": "TetherMock",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 373,
-                    "src": "341:10:0",
+                    "referencedDeclaration": 569,
+                    "src": "341:10:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TetherMock_$373",
+                      "typeIdentifier": "t_contract$_TetherMock_$569",
                       "typeString": "contract TetherMock"
                     }
                   },
@@ -436,33 +436,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "321:39:0"
+              "src": "321:39:1"
             },
             "returnParameters": {
-              "id": 18,
+              "id": 181,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "368:0:0"
+              "src": "368:0:1"
             },
-            "scope": 29,
-            "src": "310:117:0",
+            "scope": 192,
+            "src": "310:117:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 30,
-        "src": "162:267:0"
+        "scope": 193,
+        "src": "162:267:1"
       }
     ],
-    "src": "0:430:0"
+    "src": "0:430:1"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "project:/src/contracts/DeBank.sol",
       "exportedSymbols": {
         "DeBank": [
-          29
+          192
         ]
       }
     },
@@ -476,39 +476,39 @@
             ".0"
           ]
         },
-        "id": 1,
+        "id": 164,
         "name": "PragmaDirective",
-        "src": "0:23:0"
+        "src": "0:23:1"
       },
       {
         "attributes": {
-          "SourceUnit": 202,
+          "SourceUnit": 398,
           "absolutePath": "project:/src/contracts/RewardToken.sol",
           "file": "./RewardToken.sol",
-          "scope": 30,
+          "scope": 193,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 2,
+        "id": 165,
         "name": "ImportDirective",
-        "src": "79:27:0"
+        "src": "79:27:1"
       },
       {
         "attributes": {
-          "SourceUnit": 374,
+          "SourceUnit": 570,
           "absolutePath": "project:/src/contracts/TetherMock.sol",
           "file": "./TetherMock.sol",
-          "scope": 30,
+          "scope": 193,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 3,
+        "id": 166,
         "name": "ImportDirective",
-        "src": "107:26:0"
+        "src": "107:26:1"
       },
       {
         "attributes": {
@@ -522,17 +522,17 @@
           "documentation": "DeBank contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            29
+            192
           ],
           "name": "DeBank",
-          "scope": 30
+          "scope": 193
         },
         "children": [
           {
             "attributes": {
               "constant": false,
               "name": "name",
-              "scope": 29,
+              "scope": 192,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "string",
@@ -544,9 +544,9 @@
                   "name": "string",
                   "type": "string"
                 },
-                "id": 4,
+                "id": 167,
                 "name": "ElementaryTypeName",
-                "src": "184:6:0"
+                "src": "184:6:1"
               },
               {
                 "attributes": {
@@ -561,20 +561,20 @@
                   "type": "literal_string \"DeBank\"",
                   "value": "DeBank"
                 },
-                "id": 5,
+                "id": 168,
                 "name": "Literal",
-                "src": "205:8:0"
+                "src": "205:8:1"
               }
             ],
-            "id": 6,
+            "id": 169,
             "name": "VariableDeclaration",
-            "src": "184:29:0"
+            "src": "184:29:1"
           },
           {
             "attributes": {
               "constant": false,
               "name": "owner",
-              "scope": 29,
+              "scope": 192,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -588,20 +588,20 @@
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 7,
+                "id": 170,
                 "name": "ElementaryTypeName",
-                "src": "219:7:0"
+                "src": "219:7:1"
               }
             ],
-            "id": 8,
+            "id": 171,
             "name": "VariableDeclaration",
-            "src": "219:20:0"
+            "src": "219:20:1"
           },
           {
             "attributes": {
               "constant": false,
               "name": "stablecoin",
-              "scope": 29,
+              "scope": 192,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract TetherMock",
@@ -613,23 +613,23 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "TetherMock",
-                  "referencedDeclaration": 373,
+                  "referencedDeclaration": 569,
                   "type": "contract TetherMock"
                 },
-                "id": 9,
+                "id": 172,
                 "name": "UserDefinedTypeName",
-                "src": "246:10:0"
+                "src": "246:10:1"
               }
             ],
-            "id": 10,
+            "id": 173,
             "name": "VariableDeclaration",
-            "src": "246:28:0"
+            "src": "246:28:1"
           },
           {
             "attributes": {
               "constant": false,
               "name": "rwrd",
-              "scope": 29,
+              "scope": 192,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "contract RewardToken",
@@ -641,17 +641,17 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "RewardToken",
-                  "referencedDeclaration": 201,
+                  "referencedDeclaration": 397,
                   "type": "contract RewardToken"
                 },
-                "id": 11,
+                "id": 174,
                 "name": "UserDefinedTypeName",
-                "src": "280:11:0"
+                "src": "280:11:1"
               }
             ],
-            "id": 12,
+            "id": 175,
             "name": "VariableDeclaration",
-            "src": "280:23:0"
+            "src": "280:23:1"
           },
           {
             "attributes": {
@@ -663,7 +663,7 @@
                 null
               ],
               "name": "",
-              "scope": 29,
+              "scope": 192,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -675,7 +675,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "_rwrd",
-                      "scope": 28,
+                      "scope": 191,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract RewardToken",
@@ -687,23 +687,23 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "RewardToken",
-                          "referencedDeclaration": 201,
+                          "referencedDeclaration": 397,
                           "type": "contract RewardToken"
                         },
-                        "id": 13,
+                        "id": 176,
                         "name": "UserDefinedTypeName",
-                        "src": "322:11:0"
+                        "src": "322:11:1"
                       }
                     ],
-                    "id": 14,
+                    "id": 177,
                     "name": "VariableDeclaration",
-                    "src": "322:17:0"
+                    "src": "322:17:1"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "_tether",
-                      "scope": 28,
+                      "scope": 191,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract TetherMock",
@@ -715,22 +715,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "TetherMock",
-                          "referencedDeclaration": 373,
+                          "referencedDeclaration": 569,
                           "type": "contract TetherMock"
                         },
-                        "id": 15,
+                        "id": 178,
                         "name": "UserDefinedTypeName",
-                        "src": "341:10:0"
+                        "src": "341:10:1"
                       }
                     ],
-                    "id": 16,
+                    "id": 179,
                     "name": "VariableDeclaration",
-                    "src": "341:18:0"
+                    "src": "341:18:1"
                   }
                 ],
-                "id": 17,
+                "id": 180,
                 "name": "ParameterList",
-                "src": "321:39:0"
+                "src": "321:39:1"
               },
               {
                 "attributes": {
@@ -739,9 +739,9 @@
                   ]
                 },
                 "children": [],
-                "id": 18,
+                "id": 181,
                 "name": "ParameterList",
-                "src": "368:0:0"
+                "src": "368:0:1"
               },
               {
                 "children": [
@@ -764,13 +764,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 12,
+                              "referencedDeclaration": 175,
                               "type": "contract RewardToken",
                               "value": "rwrd"
                             },
-                            "id": 19,
+                            "id": 182,
                             "name": "Identifier",
-                            "src": "378:4:0"
+                            "src": "378:4:1"
                           },
                           {
                             "attributes": {
@@ -778,23 +778,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 14,
+                              "referencedDeclaration": 177,
                               "type": "contract RewardToken",
                               "value": "_rwrd"
                             },
-                            "id": 20,
+                            "id": 183,
                             "name": "Identifier",
-                            "src": "385:5:0"
+                            "src": "385:5:1"
                           }
                         ],
-                        "id": 21,
+                        "id": 184,
                         "name": "Assignment",
-                        "src": "378:12:0"
+                        "src": "378:12:1"
                       }
                     ],
-                    "id": 22,
+                    "id": 185,
                     "name": "ExpressionStatement",
-                    "src": "378:12:0"
+                    "src": "378:12:1"
                   },
                   {
                     "children": [
@@ -815,13 +815,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 10,
+                              "referencedDeclaration": 173,
                               "type": "contract TetherMock",
                               "value": "stablecoin"
                             },
-                            "id": 23,
+                            "id": 186,
                             "name": "Identifier",
-                            "src": "400:10:0"
+                            "src": "400:10:1"
                           },
                           {
                             "attributes": {
@@ -829,58 +829,51 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 16,
+                              "referencedDeclaration": 179,
                               "type": "contract TetherMock",
                               "value": "_tether"
                             },
-                            "id": 24,
+                            "id": 187,
                             "name": "Identifier",
-                            "src": "413:7:0"
+                            "src": "413:7:1"
                           }
                         ],
-                        "id": 25,
+                        "id": 188,
                         "name": "Assignment",
-                        "src": "400:20:0"
+                        "src": "400:20:1"
                       }
                     ],
-                    "id": 26,
+                    "id": 189,
                     "name": "ExpressionStatement",
-                    "src": "400:20:0"
+                    "src": "400:20:1"
                   }
                 ],
-                "id": 27,
+                "id": 190,
                 "name": "Block",
-                "src": "368:59:0"
+                "src": "368:59:1"
               }
             ],
-            "id": 28,
+            "id": 191,
             "name": "FunctionDefinition",
-            "src": "310:117:0"
+            "src": "310:117:1"
           }
         ],
-        "id": 29,
+        "id": 192,
         "name": "ContractDefinition",
-        "src": "162:267:0"
+        "src": "162:267:1"
       }
     ],
-    "id": 30,
+    "id": 193,
     "name": "SourceUnit",
-    "src": "0:430:0"
+    "src": "0:430:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
-  "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x8E48492B15Ad718F0564B60E34CeB9F3Db5Ab97a",
-      "transactionHash": "0x153bad70fbca429a286596e197fb38be29750917a5b269d1e0ec2ce2341f4cdf"
-    }
-  },
+  "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-03-23T21:30:26.526Z",
+  "updatedAt": "2022-03-24T10:59:09.793Z",
   "devdoc": {
     "methods": {}
   },
